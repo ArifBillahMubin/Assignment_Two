@@ -151,11 +151,22 @@
     position: relative;
 }
 
+/* extra try animation */
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 .badge{
     position: absolute;
     width: 50%;
     top: -120px;
     right: -90px;
+    animation: spin 10s linear infinite;
 }
 
 .lover-sub{
