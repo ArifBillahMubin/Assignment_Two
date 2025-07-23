@@ -18,6 +18,23 @@
     margin: 0 auto;
 }
 
+.title{
+    font-size: 3.125;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Noto Serif", serif;
+}
+
+.description{
+    font-size: 1.3758rem;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Inter", sans-serif;
+}
+
+.orange{
+    color: rgb(233, 90, 8);
+}
+
 /* nav Style */
 
 .nav-container{
@@ -58,12 +75,41 @@
     margin-right: 10px;
 }
 
+/* banner Style */
+
+.banner-title{
+    font-size: 4.06rem;
+    margin-bottom: 13px;
+}
+
+.banner-container{
+    display: flex;
+    align-items: center;
+}
+
+/* .banner-img img{
+    width: 100%;
+} */
+
 /* media query */
 @media screen and (max-width:576px) {
-    .nav-container{
-        margin: 0 1rem;
+    .nav-container , .banner-content{
+        margin: 1.25rem 1rem;
     }
     .navbar{
         display:none;
+    }
+
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+    .banner-img img{
+    width: 100%;
+    }
+    .title{
+        font-size: 24px;
+    }
+    .description{
+        font-size: 14px;
     }
 }
